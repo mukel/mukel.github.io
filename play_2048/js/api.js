@@ -17,7 +17,7 @@ TelegramApi.prototype.setup = function () {
                 this.im_id = this.payload.chat_id +
                     ":" + this.payload.message_id +
                     ":" + this.payload.inline_message_id;
-                this.endpoint = this.payload.game_host + "/games/api/";
+                this.endpoint = this.payload.game_manager_host + "/games/api/";
             } catch (e) {
                 return console.error('Error parsing token: ' + e.message);
             };

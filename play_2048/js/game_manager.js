@@ -35,7 +35,8 @@ GameManager.prototype.isGameTerminated = function () {
 
 // Set up the game
 GameManager.prototype.setup = function () {
-  this.gameStateKey = this.telegram.im_id || '';
+  this.storageManager.gameStateKey = this.telegram.im_id || '';
+  this.storageManager.bestScoreKey = ("bestScore:" + this.telegram.im_id) || '';
   var previousState = this.storageManager.getGameState(this.gameStateKey);
 
   // Reload the game from a previous game if present
