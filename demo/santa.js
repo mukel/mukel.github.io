@@ -12,3 +12,5 @@ if (!document.getElementById(cssId))
     link.media = 'all';
     head.appendChild(link);
 }
+
+jQuery("div.portrait:nth-child(2)").html('<audio id="djklaus" autoplay loop><source src="https://mukel.github.io/demo/happy_bells_mix.mp3"></audio>')
