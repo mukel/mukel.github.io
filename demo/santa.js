@@ -12,6 +12,10 @@ if (!document.getElementById(cssId)) {
     head.appendChild(link);
 }
 
+// Santa hat
+jQuery("div.portrait:nth-child(1) > img:nth-child(1)").attr("src", "https://mukel.github.io/demo/santa_hat.jpg")
+
+// Audio, by DJ Klaus
 jQuery("div.portrait:nth-child(2)").html('<audio id="djklaus" autoplay loop><source src="https://mukel.github.io/demo/happy_bells_mix.mp3"></audio>');
 
 /** @license
