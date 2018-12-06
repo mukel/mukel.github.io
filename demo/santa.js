@@ -49,5 +49,5 @@ a.animationInterval=Math.max(20,a.animationInterval);a.timerInit()};this.start=f
 a.usePositionFixed&&!r&&!a.flakeBottom;if(g.getComputedStyle)try{w="relative"===g.getComputedStyle(a.targetElement,null).getPropertyValue("position")}catch(d){w=!1}t=a.usePositionFixed;h&&(l&&!a.disabled)&&(a.init(),a.active=!0)};a.autoStart&&a.events.add(g,"load",y,!1);return this}(window,document);
 
 snowStorm.snowColor = '#99ccff';   // blue-ish snow!?
-snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
-snowStorm.useTwinkleEffect = true;
+snowStorm.flakesMaxActive = 128;    // show more snow on screen at once
+snowStorm.useTwinkleEffect = false;
