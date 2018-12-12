@@ -13,7 +13,7 @@
 // }
 
 // Santa hat
-jQuery(".mb-3 > img:nth-child(1)").attr("src", "https://mukel.github.io/demo/santa_hat.jpg")
+document.querySelectorAll(".mb-3 > img:nth-child(1)")[0].src = "https://mukel.github.io/demo/santa_hat.jpg";
 
 // Audio, by DJ Klaus
 // jQuery("div.portrait:nth-child(2)").html('<audio id="djklaus" autoplay loop><source src="https://mukel.github.io/demo/happy_bells_mix.mp3"></audio>');
