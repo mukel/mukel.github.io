@@ -1,0 +1,61 @@
+base_url = "https://metacircularity.com"
+title = "Metacircularity"
+description = "A blog about programming, systems, and software engineering."
+theme = "abridge"
+
+default_language = "en"
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[search]
+index_format = "elasticlunr_json"
+include_title = true
+include_description = true
+include_content = true
+
+[markdown]
+bottom_footnotes = true
+external_links_target_blank = true
+github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "gruvbox-light-soft"
+dark_theme = "gruvbox-dark-soft"
+
+[extra]
+menu = [
+    {url = "archive", name = "Posts", slash = true, blank = false, size = "s110"},
+    {url = "tags", name = "Tags", slash = true, blank = false, size = "s110"},
+]
+menu_footer = [
+    {url = "about", name = "About", slash = true, blank = false, size = "s90"},
+]
+
+textlogo = "Metacircularity"
+feed = true
+github = "mukel"
+seo = true
+
+toc = true
+recent = true
+recent_items = 15
+
+meta_index = { position = "bottom", size = "s90", author = false, readtime = false, readstring = "min", date = true, updated = false, categories_tags = true, divider = "" }
+meta_post = { position = "top", size = "s95", author = false, readtime = false, readstring = "min read", date = true, updated = true, categories_tags = true, divider = "" }
+
+search_library = "elasticlunr"
+stylesheets = ["abridge.css"]
+
+js_copycode = true
+js_email_encode = true
+js_prestyle = true
+js_switcher = true
+js_switcher_default = "dark"
+
+pwa = false

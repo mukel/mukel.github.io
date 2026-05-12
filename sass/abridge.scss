@@ -1,0 +1,68 @@
+@use '../themes/abridge/sass/abridge' with (
+  $enable-maxwidth: true,
+  $mw: 60%,
+  $mb: 900px,
+
+  $abridgeMode: "switcher",
+  $syntax-mode: "auto",
+  $switcherDefault: "dark",
+
+  $enable-icons: true,
+  $ic: true,
+  $icon-rss: true,
+
+  /// Dark Colors (gruvbox soft)
+  $f1d: #ebdbb2,
+  $f2d: #fbf1c7,
+  $c1d: #1d2021,
+  $c2d: #282828,
+  $c3d: #3c3836,
+  $c4d: #7c6f64,
+  $a1d: #83a598,
+  $a2d: #8ec07c,
+  $a3d: #83a598,
+  $a4d: #458588,
+  $cgd: #98971a,
+  $crd: #cc241d,
+
+  /// Light Colors (gruvbox soft)
+  $f1: #3c3836,
+  $f2: #1d2021,
+  $c1: #f9f5d7,
+  $c2: #f2e5bc,
+  $c3: #ebdbb2,
+  $c4: #7c6f64,
+  $a1: #076678,
+  $a2: #427b58,
+  $a3: #076678,
+  $a4: #458588,
+  $cg: #79740e,
+  $cr: #cc241d,
+
+  /// Dark Syntax Colors (gruvbox)
+  $h0d: #1d2021,
+  $h1d: #ebdbb2,
+  $h2d: #7c6f64,
+  $h3d: #fb4934,
+  $h4d: #fe8019,
+  $h5d: #fabd2f,
+  $h6d: #b8bb26,
+  $h7d: #8ec07c,
+  $h8d: #83a598,
+  $h9d: #d3869b,
+  $had: 160%,
+
+  /// Light Syntax Colors (gruvbox)
+  $h0: #f9f5d7,
+  $h1: #3c3836,
+  $h2: #7c6f64,
+  $h3: #9d0006,
+  $h4: #af3a03,
+  $h5: #b57614,
+  $h6: #79740e,
+  $h7: #427b58,
+  $h8: #076678,
+  $h9: #8f3f71,
+  $ha: 92%,
+);
+@use "extra";

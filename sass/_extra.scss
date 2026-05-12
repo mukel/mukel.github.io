@@ -1,0 +1,40 @@
+/*
+ *  Giallo code block layout (required for Zola 0.22+ class-based highlighting)
+ */
+.giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+}
+
+.giallo-ln {
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0.4em;
+    min-width: 3ch;
+    text-align: right;
+    opacity: 0.8;
+}
+
+/*
+ *  Admonitions (GitHub-style alerts)
+ *  Usage: > [!NOTE] / [!TIP] / [!IMPORTANT] / [!WARNING] / [!CAUTION]
+ */
+.markdown-alert {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid;
+    border-radius: var(--br);
+    background: var(--c2);
+}
+
+.markdown-alert > p:first-child {
+    font-weight: var(--fh);
+}
+
+.markdown-alert-note      { border-color: var(--h8); }
+.markdown-alert-tip        { border-color: var(--cg); }
+.markdown-alert-important  { border-color: var(--h9); }
+.markdown-alert-warning    { border-color: var(--h4); }
+.markdown-alert-caution    { border-color: var(--cr); }
